@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+
+
+
+/* Animated underline effect */
+li::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: transparent;
+  transition: width 0.3s ease, background-color 0.3s ease;
+  width: 0;
+}
+
+li:hover::after {
+  width: 100%;
+  background: #3b82f6; /* Tailwind blue-500 */
+}
+

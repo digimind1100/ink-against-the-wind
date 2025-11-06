@@ -1,0 +1,16 @@
+body, html {
+  background: linear-gradient(
+    to bottom,
+    rgba(106, 113, 139, 0.3) 0%,
+    rgba(101, 83, 98, 0.4) 30%,
+    rgba(148, 145, 163, 0.5) 60%,
+    rgba(231, 219, 202, 0.9) 100%
+  );
+  min-height: 100%;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+.theme-wrapper {
+ border: 1px solid;
+}
+
