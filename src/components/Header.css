@@ -1,6 +1,6 @@
 /* Base mobile image */
 .header-banner {
-  background-image: url("/banner-1-1536672.webp");
+  background-image: url("/public/banner-1-1536672.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -9,14 +9,14 @@
 /* Tablet */
 @media (min-width: 768px) {
   .header-banner {
-    background-image: url("/banner-2-25601440.webp");
+    background-image: url("/public/banner-2-25601440.webp");
   }
 }
 
 /* Desktop */
 @media (min-width: 1200px) {
   .header-banner {
-    background-image: url("/banner-3-38402120.webp");
+    background-image: url("public/banner-3-38402120.webp");
   }
 }
 
