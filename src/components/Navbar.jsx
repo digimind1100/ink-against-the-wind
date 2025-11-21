@@ -11,7 +11,7 @@ const NavBar = () => {
         <div className="text-2xl font-bold tracking-wide z-50">Author Logo</div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-8 text-lg font-medium z-50">
+        <ul className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-8 text-lg font-medium z-50 whitespace-nowrap">
           {["Home", "Novels", "Events", "Travel", "Translated Work", "Gallery"].map(
             (item, index) => (
               <li key={index} className="relative cursor-pointer group transition">
