@@ -4,15 +4,15 @@ export default function SectionBooks() {
   const books = [
     {
       title: "The Silent Lens",
-      cover: "/book1.webp",
+      cover: "/book1.jpeg",
     },
     {
       title: "Whispers of Dust",
-      cover: "/book2.webp",
+      cover: "/book2.jpeg",
     },
     {
       title: "Echoes of the Forgotten Sky",
-      cover: "/book3.webp",
+      cover: "/book3.jpeg",
     },
   ];
 

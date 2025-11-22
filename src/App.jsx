@@ -4,6 +4,8 @@ import Header from "./components/Header"
 import Section from "./components/Section";
 import SectionPhilosophy from "./components/SectionPhilosophy";
 import SectionBooks from "./components/SectionBooks";
+import LiveBroadcasts from "./components/LiveBroadcasts";
+
 
 
 function App() {
@@ -13,6 +15,7 @@ function App() {
       <Section />
       <SectionPhilosophy />
       <SectionBooks /> 
+      <LiveBroadcasts />
     </div>
   );
 }
