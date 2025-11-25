@@ -8,7 +8,7 @@ const NavBar = () => {
       {/* Main Navbar */}
       <div className="flex justify-between items-center px-6 py-3 relative">
         {/* Logo */}
-        <div className="text-2xl font-bold tracking-wide z-50">Author Logo</div>
+        <div className="text-2xl font-bold tracking-wide z-50">Logo</div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-8 text-lg font-medium z-50 whitespace-nowrap">
