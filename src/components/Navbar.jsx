@@ -1,26 +1,62 @@
-import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
-const NavBar = () => {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const linkClasses =
+    "px-4 py-2 text-lg transition hover:text-gray-300";
+
+  const activeClasses =
+    "text-yellow-400 border-b-2 border-yellow-400";
+
+  const mainMenu = [
+    { name: "Home", path: "/" },
+    { name: "Novels", path: "/novel" },
+    { name: "Events", path: "/events" },
+    { name: "Travel", path: "/travel" },
+    { name: "Translated Work", path: "/translated-work" },
+    { name: "Gallery", path: "/gallery" },
+  ];
+
+  const miniMenu = [
+    { name: "Blogs", path: "/blogs" },
+    { name: "About", path: "/about" },
+    { name: "Contact", path: "/contact" },
+  ];
+
   return (
-    <nav className="w-full fixed top-0 z-50 bg-transparent text-white">
+    <nav className="w-full fixed top-0 z-50 bg-transparent text-gray-300">
       {/* Main Navbar */}
       <div className="flex justify-between items-center px-6 py-3 relative">
+
         {/* Logo */}
-        <div className="text-2xl font-bold tracking-wide z-50">Logo</div>
+        <div className="text-2xl font-bold tracking-wide z-50">
+          Logo
+        </div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-8 text-lg font-medium z-50 whitespace-nowrap">
-          {["Home", "Novels", "Events", "Travel", "Translated Work", "Gallery"].map(
-            (item, index) => (
-              <li key={index} className="relative cursor-pointer group transition">
-                <span className="group-hover:text-gray-300">{item}</span>
-                {/* Underline Animation */}
-                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
-              </li>
-            )
-          )}
+          {mainMenu.map((item, index) => (
+            <li
+              key={index}
+              className="relative cursor-pointer group transition"
+            >
+              <NavLink
+                to={item.path}
+                className={({ isActive }) =>
+                  isActive
+                    ? `${linkClasses} ${activeClasses}`
+                    : linkClasses
+                }
+              >
+                {item.name}
+              </NavLink>
+
+              {/* Underline Animation */}
+              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+            </li>
+          ))}
         </ul>
 
         {/* Hamburger Menu */}
@@ -34,7 +70,6 @@ const NavBar = () => {
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 strokeLinecap="round"
@@ -49,39 +84,38 @@ const NavBar = () => {
 
       {/* Mini Navbar */}
       <div className="hidden md:flex justify-center space-x-6 text-sm font-medium pb-2 z-50">
-        {["Blogs", "About", "Contact"].map((item, index) => (
-          <span
+        {miniMenu.map((item, index) => (
+          <NavLink
             key={index}
-            className="relative cursor-pointer group transition"
+            to={item.path}
+            className={({ isActive }) =>
+              isActive
+                ? `${linkClasses} ${activeClasses}`
+                : linkClasses
+            }
           >
-            <span className="group-hover:text-gray-300">{item}</span>
-            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
-          </span>
+            {item.name}
+          </NavLink>
         ))}
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden flex flex-col items-center space-y-4 py-4 bg-black/60 backdrop-blur-md text-white z-50">
-          {[
-            "Home",
-            "Novels",
-            "Events",
-            "Travel",
-            "Translated Work",
-            "Gallery",
-            "Blogs",
-            "About",
-            "Contact",
-          ].map((item, index) => (
-            <a key={index} href="#" className="hover:text-gray-300">
-              {item}
-            </a>
+          {[...mainMenu, ...miniMenu].map((item, index) => (
+            <NavLink
+              key={index}
+              to={item.path}
+              onClick={() => setIsOpen(false)}
+              className={({ isActive }) =>
+                isActive ? "text-yellow-400" : "hover:text-gray-300"
+              }
+            >
+              {item.name}
+            </NavLink>
           ))}
         </div>
       )}
     </nav>
   );
-};
-
-export default NavBar;
+}

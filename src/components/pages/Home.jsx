@@ -1,17 +1,17 @@
-// src/pages/Home.jsx
+// src/components/pages/Home.jsx
 import React from "react";
-import Header from "./components/Header";
-import Section from "./components/Section";
-import SectionPhilosophy from "../components/SectionPhilosophy";
-import SectionBooks from "../components/SectionBooks";
-import LiveBroadcasts from "../components/LiveBroadcasts";
-import AboutAuthor from "../components/AboutAuthor";
-import Footer from "../components/Footer";
 
+import Header from "../Header";
+import Section from "../Section";
+import SectionPhilosophy from "../SectionPhilosophy";
+import SectionBooks from "../SectionBooks";
+import LiveBroadcasts from "../LiveBroadcasts";
+import AboutAuthor from "../AboutAuthor";
+import Footer from "../Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <>
       <Header />
       <Section />
       <SectionPhilosophy />
@@ -19,6 +19,6 @@ export default function Home() {
       <LiveBroadcasts />
       <AboutAuthor />
       <Footer />
-    </div>
+    </>
   );
 }

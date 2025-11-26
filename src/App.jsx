@@ -1,5 +1,7 @@
 // src/App.jsx
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+// Corrected paths (pages are inside components/pages)
 import Home from "./components/pages/Home";
 import NovelPage from "./components/pages/Novel";
 

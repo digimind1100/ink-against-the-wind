@@ -1,104 +1,54 @@
-// pages/novel.js
+// src/pages/Novel.jsx
 import React from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../Navbar";
+
+
 
 export default function NovelPage() {
-  const novels = [
-    {
-      title: "Novel Title 1",
-      desc: "This is a short description about the novel. It talks about the theme, the storyline and the emotional depth within the book.",
-      image: "/novels/novel1.jpg",
-    },
-    {
-      title: "Novel Title 2",
-      desc: "A thrilling story filled with suspense and unexpected twists. A completely magical journey for readers.",
-      image: "/novels/novel2.jpg",
-    },
-    {
-      title: "Novel Title 3",
-      desc: "A heart-touching emotional novel about life, loss, and rediscovery.",
-      image: "/novels/novel3.jpg",
-    },
-    {
-      title: "Novel Title 4",
-      desc: "An inspiring novel written with deep meaning and powerful storytelling.",
-      image: "/novels/novel4.jpg",
-    },
-    {
-      title: "Novel Title 5",
-      desc: "A historical fiction masterpiece blending truth and imagination beautifully.",
-      image: "/novels/novel5.jpg",
-    },
-    {
-      title: "Novel Title 6",
-      desc: "A romantic journey with layered emotions and unforgettable characters.",
-      image: "/novels/novel6.jpg",
-    },
-    {
-      title: "Novel Title 7",
-      desc: "A crime-thriller that grips the reader from the first page.",
-      image: "/novels/novel7.jpg",
-    },
-    {
-      title: "Novel Title 8",
-      desc: "A motivational take on human struggle, courage, and triumph.",
-      image: "/novels/novel8.jpg",
-    },
-    {
-      title: "Novel Title 9",
-      desc: "A fantasy world filled with rich lore and compelling characters.",
-      image: "/novels/novel9.jpg",
-    },
-    {
-      title: "Novel Title 10",
-      desc: "A dramatic tale of relationships and destiny woven together.",
-      image: "/novels/novel10.jpg",
-    },
-  ];
-
   return (
-    <div className="bg-black text-white">
+    <div className="min-h-screen bg-gray-500">
+      {/* Navbar same as Home */}
       <Navbar />
 
-      {/* FIRST BLOCK */}
-      <section className="px-6 md:px-16 py-16 text-center bg-gradient-to-b from-black to-[#111]">
-        <h1 className="text-5xl md:text-6xl font-bold mb-4">Novels Collection</h1>
-        <h2 className="text-xl md:text-2xl text-gray-300 mb-6">
-          Explore the Literary World of the Author
-        </h2>
-        <p className="text-gray-400 max-w-3xl mx-auto text-lg">
-          Discover a wide range of novels written with passion, depth, and storytelling brilliance. 
-          Each novel carries a world of imagination crafted to take you beyond ordinary boundaries.
+      {/* Main Novel Page Heading */}
+      <div className="text-center pt-24 py-12 px-4">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">
+          Novels by Safdar Zaidi
+        </h1>
+        <p className="text-lg md:text-xl max-w-2xl mx-auto text-gray-700">
+          Explore the captivating literary world through my novels.
         </p>
-      </section>
+      </div>
 
-      {/* SECOND BLOCK — NOVELS LIST */}
-      <section className="px-6 md:px-16 py-10 space-y-16">
-        {novels.map((novel, index) => (
+      {/* 10 Novel Blocks */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-6 md:px-12 pb-12">
+        {[...Array(10)].map((_, index) => (
           <div
             key={index}
-            className="grid md:grid-cols-2 gap-10 items-center bg-[#101010] p-6 rounded-2xl shadow-lg hover:shadow-xl transition"
+            className="flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden"
           >
-            {/* Left Image */}
+            {/* Left Novel Image */}
             <img
-              src={novel.image}
-              alt={novel.title}
-              className="w-full h-80 object-cover rounded-xl shadow"
+              src={`/novel/book${(index % 3) + 1}.jpeg`}
+              alt={`Book ${index + 1}`}
+              className="w-full md:w-1/3 object-cover"
             />
 
             {/* Right Text */}
-            <div>
-              <h3 className="text-3xl font-bold mb-3">{novel.title}</h3>
-              <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                {novel.desc}
+            <div className="p-6 flex flex-col justify-between">
+              <h2 className="text-2xl font-semibold mb-2">Book Title {index + 1}</h2>
+              <p className="text-gray-600 mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                accumsan, metus ultrices eleifend gravida, nulla nunc varius
+                lectus.
               </p>
-              <button className="px-6 py-2 bg-white text-black font-semibold rounded-full hover:bg-gray-300 transition">
+              <button className="self-start px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
                 Read More
               </button>
             </div>
           </div>
         ))}
-      </section>
+      </div>
     </div>
   );
 }
