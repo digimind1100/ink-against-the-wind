@@ -48,3 +48,11 @@
   );
   box-shadow: 0 -10px 20px rgba(106, 113, 139, 0.5);
 }
+/* Mobile portrait only: reduce header height */
+@media (max-width: 767px) and (orientation: portrait) {
+  .header-banner {
+    height: 70vh;
+    background-image: url("/mobileview.png");
+    background-position: center top;
+  }
+}
