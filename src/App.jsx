@@ -6,6 +6,8 @@ import Layout from "./components/Layout";
 import Home from "./components/pages/Home";
 import Novel from "./components/pages/Novel";
 import Blog from "./components/pages/Blog"
+import Events from "./components/pages/Events"
+import Travel from "./components/pages/Travel"
 
 function App() {
   return (
@@ -18,6 +20,9 @@ function App() {
         {/* NOVEL PAGE */}
         <Route path="/blog" element = {<Blog />} />
         <Route path="/novel" element={<Novel />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/travel" element={<Travel />} />
+
   
       </Routes>
     </Router>
