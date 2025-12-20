@@ -1,6 +1,7 @@
 // src/pages/Novel.jsx
 import React from "react";
 import Navbar from "../Navbar";
+import Footer from "../Footer"
 
 
 
@@ -49,6 +50,8 @@ export default function NovelPage() {
           </div>
         ))}
       </div>
+      <Footer/>
     </div>
+    
   );
 }

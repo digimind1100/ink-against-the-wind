@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../Navbar";
+import Footer from "../Footer"
 
   
 const BLOG_POSTS = [
@@ -142,6 +143,7 @@ const Blog = () => {
         </section>
 
       </div>
+      <Footer/>
     </main>
   );
 };
