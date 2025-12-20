@@ -20,7 +20,7 @@ export default function Navbar() {
   ];
 
   const miniMenu = [
-    { name: "Blogs", path: "/blogs" },
+    { name: "Blog", path: "/blog" },   // ✅ fixed
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
   ];
