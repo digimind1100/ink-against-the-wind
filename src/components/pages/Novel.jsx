@@ -23,14 +23,14 @@ export default function NovelPage() {
 
       {/* 10 Novel Blocks */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-6 md:px-12 pb-12">
-        {[...Array(10)].map((_, index) => (
+        {[...Array(6)].map((_, index) => (
           <div
             key={index}
             className="flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden"
           >
             {/* Left Novel Image */}
             <img
-              src={`/novel/book${(index % 3) + 1}.jpeg`}
+              src={`/novel/book${(index % 6) + 1}.png`}
               alt={`Book ${index + 1}`}
               className="w-full md:w-1/3 object-cover"
             />

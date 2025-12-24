@@ -1,8 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar";
-import Footer from "../Footer"
+import Footer from "../Footer";
 
-  
 const BLOG_POSTS = [
   {
     id: 1,
@@ -16,30 +15,36 @@ const BLOG_POSTS = [
   },
   {
     id: 2,
-    title: "Behind the Making of My Latest Book",
+    title: "مستنصر حسین تارڑ کے سفری روزنامچے ”ہیلو ہالینڈ“ میں مغالطے",
     excerpt:
-      "Every book has a hidden journey — drafts rewritten, ideas abandoned, and truths slowly revealed through patience.",
+      "یورپ میں مقیم ایک دوست نے جناب مستنصر حسین تارڑ کے سفری روزنامچے ”ہیلوہالینڈ“ کے صفحات کے کچھ عکس بھیج کر دریافت کیا کہ: ”کیا یہ بات سچ ہے کہ ہالینڈ کے معروف فلم ڈائریکٹرکو ایک پاکستانی نے جذبہ ایمانی کے تحت قتل کردیا تھا؟ “ اس سوال نے مجھے ان کی اس تخلیق کو پڑھنے پر مائل کیا۔ ہالینڈ میں ہمیں اک علم دوست پاکستانی کے کتب خانہ سے مذکورہ سفری ڈائری پڑھنے کو مل گئی۔",
     category: "Behind the Books",
     date: "February 28, 2025",
     readTime: "6 min read",
+    url: "https://www.humsub.com.pk/224778/safdar-zaidi/",
+    rtl: true,
   },
   {
     id: 3,
-    title: "Writing Discipline vs Inspiration",
+    title: "بنی اسرائیل کا گمشدہ قبیلہ: ایک اسطورہ یا ایک فتنہ پرور نظریہ",
     excerpt:
-      "Waiting for inspiration is a luxury. Discipline is what allows writers to show up even when words resist.",
+      "بنی اسرائیل کا گمشدہ قبیلہ، ایک اسطورہ یا ایک فتنہ پرور نظریہ: کیا ہر شخص یہودی مذہب اختیار کر سکتا شمال مشرقی قبائلی علاقے ”میزو رام اور منی پورہ“ سے تعلق رکھنے والا ایک انڈر گریجویٹ نوجوان جوزف ہاؤکپ اسرائیل ہجرت کر کے وہاں کی قومیت اختیار کرنے پر بے حد پرُجوش ہے۔اس کا کہناہے کہ وہ اسرائیل جاتے ہی فوجی تربیت حاصل کرنے بعدغزہ میں اسرائیل کے دشمنوں سے لڑے گا۔",
     category: "Writing & Craft",
     date: "February 10, 2025",
     readTime: "4 min read",
+    url: "https://www.humsub.com.pk/562975/safdar-zaidi-21/",
+    rtl: true,
   },
   {
     id: 4,
-    title: "Literature as Social Memory",
+    title: "بدقسمتی انسانوں تک کیسے پہنچی؟ (امیزون کی لوک کہانی)",
     excerpt:
-      "Books often carry what societies choose to forget. Literature becomes a quiet archive of human experience.",
+      "یہ کہانی سرینام کے امیزون کے قبائل کی لوک کہانیوں میں سے ایک ہے۔ اس کہانی کو ہم نے ولندیزی سے اردو میں ترجمہ کیا ہے۔ کوشش ہے کہ اردو قاری تک امیزون کے خطے کی کہانیاں پہچائی جا سکیں: صفدر زیدیبہت ہی پرانی بات ہے، اس وقت تک ہمارے دادے اور نانے تک پیدا نہیں ہوئے تھے۔ اس وقت دنیا بالکل مختلف نظر آتی تھی۔ درخت ہمیشہ پھلوں سے لدے ہوتے تھے۔ جانور مکمل امن سے ایک دوسرے کے ساتھ ",
     category: "Society & Culture",
     date: "January 22, 2025",
     readTime: "7 min read",
+    url:"https://www.humsub.com.pk/522233/safdar-zaidi-20/",
+    rtl: true,
   },
 ];
 
@@ -49,7 +54,7 @@ const Blog = () => {
 
   return (
     <main className="bg-black text-gray-200 pt-28 pb-20">
-        <Navbar />
+      <Navbar />
       <div className="max-w-6xl mx-auto px-4">
 
         {/* Hero */}
@@ -81,44 +86,47 @@ const Blog = () => {
           </section>
         )}
 
-        {/* Categories */}
-        <section className="flex gap-3 overflow-x-auto pb-6 mb-12">
-          {[
-            "All",
-            "Writing & Craft",
-            "Behind the Books",
-            "Essays & Reflections",
-            "Society & Culture",
-          ].map((cat) => (
-            <button
-              key={cat}
-              className="border border-gray-700 px-4 py-1.5 rounded-full text-sm whitespace-nowrap hover:border-yellow-400 hover:text-yellow-400 transition"
-            >
-              {cat}
-            </button>
-          ))}
-        </section>
-
         {/* Blog Grid */}
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {otherPosts.map((post) => (
             <article
               key={post.id}
-              className="border border-gray-800 rounded-xl p-6 bg-gray-950 hover:border-gray-700 transition"
+              dir={post.rtl ? "rtl" : "ltr"}
+              className={`border border-gray-800 rounded-xl p-6 bg-gray-950 hover:border-gray-700 transition ${
+                post.rtl ? "text-right" : "text-left"
+              }`}
             >
               <span className="text-xs text-gray-500">
                 {post.category}
               </span>
+
               <h3 className="text-xl font-serif mt-2 mb-3">
                 {post.title}
               </h3>
-              <p className="text-gray-400 text-sm mb-4">
+
+              <p className="text-gray-400 text-sm mb-4 leading-loose">
                 {post.excerpt}
               </p>
-              <div className="flex justify-between text-xs text-gray-500">
+
+              <div
+                className={`flex justify-between text-xs text-gray-500 ${
+                  post.rtl ? "flex-row-reverse" : ""
+                }`}
+              >
                 <span>{post.date}</span>
                 <span>{post.readTime}</span>
               </div>
+
+              {post.url && (
+                <a
+                  href={post.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-4 text-sm font-medium text-yellow-400 hover:text-yellow-300 transition"
+                >
+                  {post.rtl ? "← مزید پڑھیں" : "Read More →"}
+                </a>
+              )}
             </article>
           ))}
         </section>
@@ -143,7 +151,7 @@ const Blog = () => {
         </section>
 
       </div>
-      <Footer/>
+      <Footer />
     </main>
   );
 };
