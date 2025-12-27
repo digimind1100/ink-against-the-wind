@@ -53,7 +53,8 @@ const Blog = () => {
   const otherPosts = BLOG_POSTS.filter((p) => !p.featured);
 
   return (
-    <main className="bg-black text-gray-200 pt-28 pb-20">
+    <main className="bg-black text-gray-200 pt-28 pb-20 font-urdu">
+
       <Navbar />
       <div className="max-w-6xl mx-auto px-4">
 
@@ -88,47 +89,54 @@ const Blog = () => {
 
         {/* Blog Grid */}
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {otherPosts.map((post) => (
-            <article
-              key={post.id}
-              dir={post.rtl ? "rtl" : "ltr"}
-              className={`border border-gray-800 rounded-xl p-6 bg-gray-950 hover:border-gray-700 transition ${
-                post.rtl ? "text-right" : "text-left"
-              }`}
-            >
-              <span className="text-xs text-gray-500">
-                {post.category}
-              </span>
+       
+         {otherPosts.map((post) => (
+  <article
+    key={post.id}
+    dir={post.rtl ? "rtl" : "ltr"}
+    className={`border border-gray-800 rounded-xl p-6 bg-gray-950 hover:border-gray-700 transition ${
+      post.rtl ? "text-right font-urdu font-normal leading-loose" : "text-left"
+    }`}
+  >
+    <span className="text-xs text-gray-500">
+      {post.category}
+    </span>
 
-              <h3 className="text-xl font-serif mt-2 mb-3">
-                {post.title}
-              </h3>
+    {/* ✅ THIS IS CORRECT */}
+    <h3
+      className={`text-xl mt-2 mb-3 ${
+        post.rtl ? "font-urdu font-normal" : "font-serif"
+      }`}
+    >
+      {post.title}
+    </h3>
 
-              <p className="text-gray-400 text-sm mb-4 leading-loose">
-                {post.excerpt}
-              </p>
+    <p className="text-gray-400 text-sm mb-4 leading-loose">
+      {post.excerpt}
+    </p>
 
-              <div
-                className={`flex justify-between text-xs text-gray-500 ${
-                  post.rtl ? "flex-row-reverse" : ""
-                }`}
-              >
-                <span>{post.date}</span>
-                <span>{post.readTime}</span>
-              </div>
+    <div
+      className={`flex justify-between text-xs text-gray-500 ${
+        post.rtl ? "flex-row-reverse" : ""
+      }`}
+    >
+      <span>{post.date}</span>
+      <span>{post.readTime}</span>
+    </div>
 
-              {post.url && (
-                <a
-                  href={post.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block mt-4 text-sm font-medium text-yellow-400 hover:text-yellow-300 transition"
-                >
-                  {post.rtl ? "← مزید پڑھیں" : "Read More →"}
-                </a>
-              )}
-            </article>
-          ))}
+    {post.url && (
+      <a
+        href={post.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block mt-4 text-sm font-medium text-yellow-400 hover:text-yellow-300 transition"
+      >
+        {post.rtl ? "← مزید پڑھیں" : "Read More →"}
+      </a>
+    )}
+  </article>
+))}
+
         </section>
 
         {/* Reflection */}
