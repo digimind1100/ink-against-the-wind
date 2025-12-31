@@ -14,6 +14,15 @@ export default function SectionBooks() {
       title: "Echoes of the Forgotten Sky",
       cover: "/book3.png",
     },
+    {
+      title: "Echoes of the Forgotten Sky",
+      cover: "/book4.png",
+      link: "https://www.tiktok.com/@bintedahir1?_r=1&_t=ZT-92bL0lZTDnK", // ✅ TikTok link
+    },
+    {
+      title: "Echoes of the Forgotten Sky",
+      cover: "/book5.png",
+    },
   ];
 
   return (
@@ -71,14 +80,28 @@ export default function SectionBooks() {
               <h3 className="text-2xl font-medium mt-4">{book.title}</h3>
 
               {/* Button */}
-              <button
-                className="
-                  mt-3 px-6 py-2 rounded-full border border-white/40 
-                  text-sm hover:bg-white/20 transition
-                "
-              >
-                Read More
-              </button>
+              {book.link ? (
+                <a
+                  href={book.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="
+                    mt-3 px-6 py-2 rounded-full border border-white/40 
+                    text-sm hover:bg-white/20 transition inline-block
+                  "
+                >
+                  Read More
+                </a>
+              ) : (
+                <button
+                  className="
+                    mt-3 px-6 py-2 rounded-full border border-white/40 
+                    text-sm hover:bg-white/20 transition
+                  "
+                >
+                  Read More
+                </button>
+              )}
             </motion.div>
           ))}
         </div>
