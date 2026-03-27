@@ -4,7 +4,7 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <header className="relative h-screen flex flex-col text-white bg-cover bg-center bg-no-repeat header-banner">
+    <header className="relative min-h-[95vh] md:min-h-[92vh] lg:min-h-[90vh] flex flex-col text-white bg-cover bg-center bg-no-repeat header-banner">
       {/* Background overlay */}
       <div className="absolute inset-0 bg-black/50 z-0"></div>
 
