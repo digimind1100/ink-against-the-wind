@@ -1,33 +1,38 @@
 import { motion } from "framer-motion";
 
 export default function SectionBooks() {
-  const books = [
-    {
-      title: "DE SUiKER DiE NiET ZOET WAS",
-      cover: "/book1.png",
-    },
-    {
-      title: "CHINI JO MITHI NA THI",
-      cover: "/book2.png",
-    },
-    {
-      title: "BHAG BHARI",
-      cover: "/book3.png",
-    },
-    {
-      title: "BINT-E-DAHIR",
-      cover: "/book4.png",
-      link: "https://www.tiktok.com/@bintedahir1?_r=1&_t=ZT-92bL0lZTDnK", // ✅ TikTok link
-    },
-    {
-      title: "GAWADAR KE KEKREY",
-      cover: "/book5.png",
-    },
-    {
-      title: "ZARD QAIDI",
-      cover: "/book6.png",
-    },
-  ];
+ const books = [
+  {
+    title: "DE SUiKER DiE NiET ZOET WAS",
+    cover: "/book1.png",
+    link: "/book/book1",
+  },
+  {
+    title: "CHINI JO MITHI NA THI",
+    cover: "/book2.png",
+    link: "/book/book2",
+  },
+  {
+    title: "BHAG BHARI",
+    cover: "/book3.png",
+    link: "/book/book3",
+  },
+  {
+    title: "BINT-E-DAHIR",
+    cover: "/book4.png",
+    link: "https://www.tiktok.com/@bintedahir1?_r=1&_t=ZT-92bL0lZTDnK",
+  },
+  {
+    title: "GAWADAR KE KEKREY",
+    cover: "/book5.png",
+    link: "/book/book5",
+  },
+  {
+    title: "ZARD QAIDI",
+    cover: "/book6.png",
+    link: "/book/book6",
+  },
+];
 
   return (
     <section
@@ -86,16 +91,16 @@ export default function SectionBooks() {
               {/* Button */}
               {book.link ? (
                 <a
-                  href={book.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="
-                    mt-3 px-6 py-2 rounded-full border border-white/40 
-                    text-sm hover:bg-white/20 transition inline-block
-                  "
-                >
-                  Read More
-                </a>
+  href={book.link}
+  target={book.link.startsWith("http") ? "_blank" : "_self"}
+  rel="noopener noreferrer"
+  className="
+    mt-3 px-6 py-2 rounded-full border border-white/40 
+    text-sm hover:bg-white/20 transition inline-block
+  "
+>
+  Read More
+</a>
               ) : (
                 <button
                   className="
