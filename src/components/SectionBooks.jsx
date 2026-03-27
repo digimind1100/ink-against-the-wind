@@ -3,25 +3,29 @@ import { motion } from "framer-motion";
 export default function SectionBooks() {
   const books = [
     {
-      title: "The Silent Lens",
+      title: "DE SUiKER DiE NiET ZOET WAS",
       cover: "/book1.png",
     },
     {
-      title: "Whispers of Dust",
+      title: "CHINI JO MITHI NA THI",
       cover: "/book2.png",
     },
     {
-      title: "Echoes of the Forgotten Sky",
+      title: "BHAG BHARI",
       cover: "/book3.png",
     },
     {
-      title: "Echoes of the Forgotten Sky",
+      title: "BINT-E-DAHIR",
       cover: "/book4.png",
       link: "https://www.tiktok.com/@bintedahir1?_r=1&_t=ZT-92bL0lZTDnK", // ✅ TikTok link
     },
     {
-      title: "Echoes of the Forgotten Sky",
+      title: "GAWADAR KE KEKREY",
       cover: "/book5.png",
+    },
+    {
+      title: "ZARD QAIDI",
+      cover: "/book6.png",
     },
   ];
 
