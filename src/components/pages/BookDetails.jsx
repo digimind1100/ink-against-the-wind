@@ -6,33 +6,33 @@ const booksData = [
     id: "book1",
     title: "DE SUiKER DiE NiET ZOET WAS",
     cover: "/book1.png",
-    description:
-      "A Journey Through the Black Water of the Soul
-In this hauntingly beautiful narrative, the author weaves a tapestry that is as much about the geography of the heart as it is about the migration of a people. What begins as a modern, domestic tragedy in The Hague—a quiet, suffocating battle with depression—blossoms into a sweeping historical epic.
-The transition to 1873 India is handled with remarkable sensitivity, stripping away the romanticism of the past to reveal the raw, systemic cruelty of British rule. By tracing the protagonist's lineage across the Kala Pani to the soil of Suriname, the story suggests that our current shadows are often cast by the suns of our ancestors. It is a profound meditation on how understanding where we came from is the only way to decide where we are going.
+    description: `De Sugar that wasn’t sweet
+A Journey Through the Black Water of the Soul
 
-",
+In this hauntingly beautiful narrative, the author weaves a tapestry that is as much about the geography of the heart as it is about the migration of a people. What begins as a modern, domestic tragedy in The Hague—a quiet, suffocating battle with depression—blossoms into a sweeping historical epic.
+
+The transition to 1873 India is handled with remarkable sensitivity, stripping away the romanticism of the past to reveal the raw, systemic cruelty of British rule. By tracing the protagonist's lineage across the Kala Pani to the soil of Suriname, the story suggests that our current shadows are often cast by the suns of our ancestors. It is a profound meditation on how understanding where we came from is the only way to decide where we are going.`
   },
   {
     id: "book2",
     title: "CHINI JO MITHI NA THI",
     cover: "/book2.png",
     description:
-      "Chini Jo Meethi na thi ( De Sugar that wasn’t sweet )
+      `Chini Jo Meethi na thi ( De Sugar that wasn’t sweet )
 The Bitter and the Sweet
 In the coastal mists of The Hague, a young couple finds their bond frayed by the shadow of the man’s deepening melancholy. Teetering on the precipice of ruin, the relationship falters as he casts about for a fleeting reprieve—a hollow happiness that vanishes as quickly as it appears. Yet, by a sudden caprice of fate, he encounters a stranger who holds the lantern to his forgotten history, guiding him back through the corridors of time.
 Karaila and sugar: the sharp sting of the bitter melon and the crystalline grace of sweetness. These are the elements that season this bittersweet odyssey of love, kinship, and the fragile nature of trust.
 With a startling shift in tide, the narrative retreats to the India of 1873. Here, the prose captures the harrowing plight of the peasantry, ground into the dust by the machinations of British colonial rule. Driven by desperation and the promise of a hallowed horizon, a small band of souls resolves to seek the legendary Land of Shri Ram, beginning an arduous pilgrimage toward the docks of Calcutta.
 What follows is the crossing of the Kala Pani—the dreaded Black Water. Upon reaching the shores of Suriname, we become witnesses to their endurance and the birth of a new legacy.
 The journey concludes where it began: with a man no longer adrift. Having unearthed the roots of his heritage, he stands at a solemn crossroads, finally possessed of the clarity required to forge a path toward a life of genuine grace.
-",
+`,
   },
   {
     id: "book3",
     title: "BHAG BHARI",
     cover: "/book3.png",
     description:
-      "'Bhaag Bhari': — A Study of Nuclear Disaster
+      `Bhaag Bhari': — A Study of Nuclear Disaster
 Safdar Zaidi undertakes the mission to foreground the potential disaster hanging like the Sword of Damocles over the heads of 1.6 billion people. In a 416-page the author very vividly and graphically presents the horrors a nuclear war between India and Pakistan can cause. He warns it will not be confined and cannot be confined only to the two countries. In an already destabilised world where climate change with all its concomitant features of green house effect and increasing temperatures and the weather cycles badly disturbed the impact of a nuclear war can prove disastrous to the entire world.
 It is in the light of such a global background that the author sets the story of Bhaag Bhari (a woman blessed by good fortune!), an Untouchable woman who is additionally a bonded labourer belonging to a village in the interior of Pakistan’s southern province of Sindh.
 Typically, at a tender age she is raped by Jaffar Shah, younger brother of the Wadera Haider Shah (landlord), becomes pregnant, implores the Wadera for justice and succour but is subjected to extreme humiliation amid abuses and blows. The Wadera marries her off to an old man from her caste who dies soon after. Bhaag Bhari gives birth to a son, Sawan.
@@ -40,14 +40,14 @@ Sawan is the key protagonist in the novel. Bhaag Bhari does all she can to prote
 From there onwards Sawan aka Khalid is indoctrinated to hate the enemies of Islam and that sort of mindset inevitably takes him on to terrorism. The terrorism is directed at the non-Muslim minorities in Pakistan as well as the Shias, whose beliefs are found colliding with extreme Sunni dogma. A mentor for Khalid is Muaviya.
 Both ardently believe that the world is unjust and unfair and as true believers in Islam it is their bounden duty to change it in accordance with the will of Allah. Khalid is sent to India where he continues with terrorist missions.
 ( Abbas Zaidi )
-",
+`
   },
   {
     id: "book4",
     title: "BINT-E-DAHIR",
     cover: "/book4.png",
     description:
-      "Bint-E-Dahir
+      `Bint-E-Dahir
 Bint-e-Dahir: Story Of The Crown Princess Of Sindh
 Safdar Zaidi is a novelist who takes up controversial historical and contemporary events which he casts imaginatively and creatively into in-depth studies of multilayered social, historical and political relations.
 His latest novel, Bint-e-Dahir (Daughter of Dahir) belongs to a very special sub-category of the historical novel genre: the historical romance. The main protagonist is Rajkumari Surya, daughter of King Dahir, the last Hindu ruler of Sindh. Dahir was defeated by the invading Arab Army led by the young Arab general Muhammad bin Qasim in 712. His head was severed and sent to the Caliph Al-Walid in Damascus.
@@ -57,14 +57,14 @@ Dahir’s severed head had been sent to Caliph Al-Walid. Rajkumari was to be sen
 In the discussions which takes between them, she impresses him profoundly by expounding the deep ethical and moral principles upon which Indian society is based. Bin Qasim is unable to counter her intellectual prowess as he realises that the Arab approach to life is simplistic and rudimentary.
 Inevitably, bin Qasim is drawn towards Rajkumari, which she senses forthwith. Notwithstanding the unequal equation defining their relationship she acquires a dominant position in relation to him – a situation she relishes.
 ( Ishtiaq Ahmed )
-",
+`
   },
   {
     id: "book5",
     title: "GAWADAR KE KEKREY",
     cover: "/book5.png",
     description:
-      "Gwadar Ke Surkh Kekre (The Red Crabs of Gwadar )
+      `Gwadar Ke Surkh Kekre (The Red Crabs of Gwadar )
 Censorship has been the bane of writers ever since people have used various forms of media where they can share their writings with public. Its most prevalent form is when those in power prevent material reaching public that they think is inappropriate, mostly because they feel it will make them look bad and turn public against them. This often involves making writers or publishers remove parts of their books or banning the sale and distribution of books outright. However, it can be much worse than that and writers have faced physical harassment, arrests, torture and even death and disappearance when they have been on the wrong side of authoritarian or brutal tyrannical regimes. 
 Faced with such threats writers have employed various techniques in their writings.
 Oscar Wilde tells us, ‘If you want to tell people the truth, make them laugh, otherwise they will kill you.’ And therefore, the use of humour is one such technique, often it takes the form of satire and is disguised in such a way that the real target is ambiguous.
@@ -74,14 +74,14 @@ Safdar Zaidi’s novel, ‘Gwadar Kay Surkh Karary (The Red Crabs of Gwadar)’ 
 The writer told me that putting this story on paper was a very emotional experience for him since he has written about events that have not been in the past but are ongoing and all the atrocities and barbarities mentioned in the story are happening every day in the land of the pure.
 I am told that the story is going to be made into a animation film, but I don’t think it will be allowed screening in Pakistan.
 ( Aamir Butt )
-",
+`
   },
   {
     id: "book6",
     title: "ZARD QAIDI",
     cover: "/book6.png",
     description:
-      "Zard Qaidi ( Yellow Prisoners )
+      `Zard Qaidi ( Yellow Prisoners )
 In the Mahabharata, when Ashwatthama, the son of Dronacharya, used the Narayan Astra (a mythical atomic weapon), Krishna cursed him with eternal life, turning him into a demonic being. Since then, Ashwatthama has remained alive—and so has his evil—which now looms over the people of the subcontinent in the form of the atomic bomb.
 Safdar Zaidi traces this demonic source, leading the reader to uranium mines where poison settles into miners’ lungs as dust, and into sensitive minds as fear—constantly creating new forms of the “Narayan Astra.” The nuclear-armed subcontinent searches for a “Shanti Mantra” (peace invocation) to free itself from Ashwatthama’s ghost. One note of this mantra is expressed by Zaidi in “Bhag Bhari,” and another in “Zard Qaidī” (The Yellow Prisoner). Both novels are, in essence, a literary resistance against this collective ظلم (oppression).
 
@@ -92,7 +92,7 @@ The workers in “Zard Qaidī” bear witness to a system that transforms the Ea
 The appearance of aliens in the novel is not merely a fictional device; rather, it represents an external gaze upon Earth’s inhabitants—or symbolically, the collective conscience of humanity itself—astonished at the ظلم occurring on this planet, wondering how humans and their own home have become strangers to each other. The “progress” humanity prides itself on is, in reality, destruction—and a question for which humanity itself has no answer.
 
 Ghulam Asghar Khan
-",
+`
   },
 ];
 
