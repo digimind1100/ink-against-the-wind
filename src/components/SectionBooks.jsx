@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 export default function SectionBooks() {
  const books = [
   {
@@ -90,17 +90,12 @@ export default function SectionBooks() {
 
               {/* Button */}
               {book.link ? (
-                <a
-  href={book.link}
-  target={book.link.startsWith("http") ? "_blank" : "_self"}
-  rel="noopener noreferrer"
-  className="
-    mt-3 px-6 py-2 rounded-full border border-white/40 
-    text-sm hover:bg-white/20 transition inline-block
-  "
+               <Link
+  to={book.link}
+  className="mt-3 px-6 py-2 rounded-full border border-white/40 text-sm hover:bg-white/20 transition inline-block"
 >
   Read More
-</a>
+</Link>
               ) : (
                 <button
                   className="
