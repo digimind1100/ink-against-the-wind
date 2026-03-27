@@ -12,7 +12,7 @@ const LiveBroadcasts = () => {
                 className="max-w-5xl mx-auto text-center"
             >
                 <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                    🎙️ Author Live Broadcasts
+                    🎙️ Author<span className="align-super text-sm">’s</span> Live Broadcasts
                 </h2>
 
                 <p className="text-lg md:text-xl text-gray-300 mb-10">
