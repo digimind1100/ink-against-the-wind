@@ -5,6 +5,24 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+.header-banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .header-banner {
+    background-position: center bottom;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .header-banner {
+    background-position: center center;
+  }
+}
 
 /* Tablet */
 @media (min-width: 768px) {
