@@ -1,20 +1,38 @@
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 export default function SectionBooks() {
-  const books = [
-    {
-      title: "The Silent Lens",
-      cover: "/book1.jpeg",
-    },
-    {
-      title: "Whispers of Dust",
-      cover: "/book2.jpeg",
-    },
-    {
-      title: "Echoes of the Forgotten Sky",
-      cover: "/book3.jpeg",
-    },
-  ];
+ const books = [
+  {
+    title: "DE SUiKER DiE NiET ZOET WAS",
+    cover: "/book1.png",
+    link: "/book/book1",
+  },
+  {
+    title: "CHINI JO MITHI NA THI",
+    cover: "/book2.png",
+    link: "/book/book2",
+  },
+  {
+    title: "BHAG BHARI",
+    cover: "/book3.png",
+    link: "/book/book3",
+  },
+  {
+    title: "BINT-E-DAHIR",
+    cover: "/book4.png",
+    link: "https://www.tiktok.com/@bintedahir1?_r=1&_t=ZT-92bL0lZTDnK",
+  },
+  {
+    title: "GAWADAR KE KEKREY",
+    cover: "/book5.png",
+    link: "/book/book5",
+  },
+  {
+    title: "ZARD QAIDI",
+    cover: "/book6.png",
+    link: "/book/book6",
+  },
+];
 
   return (
     <section
@@ -71,14 +89,23 @@ export default function SectionBooks() {
               <h3 className="text-2xl font-medium mt-4">{book.title}</h3>
 
               {/* Button */}
-              <button
-                className="
-                  mt-3 px-6 py-2 rounded-full border border-white/40 
-                  text-sm hover:bg-white/20 transition
-                "
-              >
-                Read More
-              </button>
+              {book.link ? (
+               <Link
+  to={book.link}
+  className="mt-3 px-6 py-2 rounded-full border border-white/40 text-sm hover:bg-white/20 transition inline-block"
+>
+  Read More
+</Link>
+              ) : (
+                <button
+                  className="
+                    mt-3 px-6 py-2 rounded-full border border-white/40 
+                    text-sm hover:bg-white/20 transition
+                  "
+                >
+                  Read More
+                </button>
+              )}
             </motion.div>
           ))}
         </div>

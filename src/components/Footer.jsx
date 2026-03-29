@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaYoutube, FaTiktok } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -35,23 +35,33 @@ export default function Footer() {
 
         {/* Social Links */}
         <motion.div
-          initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.25 }}
-          className="flex justify-center gap-8 mt-6"
-        >
-          <a href="#" className="flex items-center gap-2 hover:text-white transition-all text-gray-300">
-            <FaInstagram className="text-xl" /> Instagram
-          </a>
+  initial={{ opacity: 0, y: 15 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.7, delay: 0.25 }}
+  className="
+    flex flex-col sm:flex-row
+    justify-center items-center
+    gap-4 sm:gap-8
+    mt-6
+  "
+>
+  <a href="#" className="flex items-center gap-2">
+    <FaInstagram className="text-xl text-[#E4405F]" /> Instagram
+  </a>
 
-          <a href="#" className="flex items-center gap-2 hover:text-white transition-all text-gray-300">
-            <FaFacebook className="text-xl" /> Facebook
-          </a>
+  <a href="#" className="flex items-center gap-2">
+    <FaFacebook className="text-xl text-[#1877F2]" /> Facebook
+  </a>
 
-          <a href="#" className="flex items-center gap-2 hover:text-white transition-all text-gray-300">
-            <FaYoutube className="text-xl" /> YouTube
-          </a>
-        </motion.div>
+  <a href="#" className="flex items-center gap-2">
+    <FaYoutube className="text-xl text-[#FF0000]" /> YouTube
+  </a>
+
+  <a href="#" className="flex items-center gap-2">
+    <FaTiktok className="text-xl text-[#69C9D0]" /> TikTok
+  </a>
+</motion.div>
+
 
         {/* Divider */}
         <motion.hr

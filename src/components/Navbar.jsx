@@ -20,7 +20,7 @@ export default function Navbar() {
   ];
 
   const miniMenu = [
-    { name: "Blogs", path: "/blogs" },
+    { name: "Blog", path: "/blog" },   // ✅ fixed
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
   ];
@@ -52,11 +52,13 @@ export default function Navbar() {
               >
                 {item.name}
               </NavLink>
+              
 
               {/* Underline Animation */}
               <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
             </li>
           ))}
+          
         </ul>
 
         {/* Hamburger Menu */}
@@ -97,6 +99,8 @@ export default function Navbar() {
             {item.name}
           </NavLink>
         ))}
+
+
       </div>
 
       {/* Mobile Menu */}
