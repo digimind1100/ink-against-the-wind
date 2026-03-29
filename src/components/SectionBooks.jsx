@@ -1,17 +1,13 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import BookDetails from "./pages/BookDetails";
-import { useEffect } from "react";
-
-
 
 export default function SectionBooks() {
   const [selectedBook, setSelectedBook] = useState(null);
 
-  
-useEffect(() => {
-  window.scrollTo(0, 0);
-}, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [selectedBook]);
 
   if (selectedBook) {
     return (
@@ -30,6 +26,7 @@ useEffect(() => {
     { title: "GAWADAR KE KEKREY", cover: "/book5.png" },
     { title: "ZARD QAIDI", cover: "/book6.png" },
   ];
+
 
   return (
     <section className="w-full py-24 px-6 md:px-16 bg-gradient-to-b from-[#0f0d11]/95 via-[#4f4152]/80 to-[#75805d]/60 text-white">
