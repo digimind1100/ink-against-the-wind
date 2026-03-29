@@ -1,38 +1,37 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 export default function SectionBooks() {
- const books = [
-  {
-    title: "DE SUiKER DiE NiET ZOET WAS",
-    cover: "/book1.png",
-    link: "/book/book1",
-  },
-  {
-    title: "CHINI JO MITHI NA THI",
-    cover: "/book2.png",
-    link: "/book/book2",
-  },
-  {
-    title: "BHAG BHARI",
-    cover: "/book3.png",
-    link: "/book/book3",
-  },
-  {
-    title: "BINT-E-DAHIR",
-    cover: "/book4.png",
-    link: "/book/book4",
-  },
-  {
-    title: "GAWADAR KE KEKREY",
-    cover: "/book5.png",
-    link: "/book/book5",
-  },
-  {
-    title: "ZARD QAIDI",
-    cover: "/book6.png",
-    link: "/book/book6",
-  },
-];
+  const books = [
+    {
+      title: "DE SUiKER DiE NiET ZOET WAS",
+      cover: "/book1.png",
+
+    },
+    {
+      title: "CHINI JO MITHI NA THI",
+      cover: "/book2.png",
+
+    },
+    {
+      title: "BHAG BHARI",
+      cover: "/book3.png",
+
+    },
+    {
+      title: "BINT-E-DAHIR",
+      cover: "/book4.png",
+
+    },
+    {
+      title: "GAWADAR KE KEKREY",
+      cover: "/book5.png",
+
+    },
+    {
+      title: "ZARD QAIDI",
+      cover: "/book6.png",
+
+    },
+  ];
 
   return (
     <section
@@ -43,7 +42,7 @@ export default function SectionBooks() {
       "
     >
       <div className="max-w-6xl mx-auto text-center">
-        
+
         {/* Heading */}
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
@@ -88,24 +87,9 @@ export default function SectionBooks() {
               {/* Title */}
               <h3 className="text-2xl font-medium mt-4">{book.title}</h3>
 
-              {/* Button */}
-              {book.link ? (
-               <Link
-  to={book.link}
-  className="mt-3 px-6 py-2 rounded-full border border-white/40 text-sm hover:bg-white/20 transition inline-block"
->
-  Read More
-</Link>
-              ) : (
-                <button
-                  className="
-                    mt-3 px-6 py-2 rounded-full border border-white/40 
-                    text-sm hover:bg-white/20 transition
-                  "
-                >
-                  Read More
-                </button>
-              )}
+              <button className="mt-3 px-6 py-2 border border-white/40 rounded-full hover:bg-white/20 transition">
+                Read More
+              </button>
             </motion.div>
           ))}
         </div>
