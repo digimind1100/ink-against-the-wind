@@ -1,13 +1,30 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import BookDetails from "./pages/BookDetails";
+import { useRef } from "react";
 
 export default function SectionBooks() {
   const [selectedBook, setSelectedBook] = useState(null);
+   const sectionRef = useRef(null);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    sectionRef.current?.scrollIntoView({
+  behavior: "smooth",
+  block: "start",
+});
   }, [selectedBook]);
+
+  const handleBack = () => {
+    setSelectedBook(null);
+
+    setTimeout(() => {
+      sectionRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }, 50);
+  };
+
 
   const books = [
     { title: "DE SUiKER DiE NiET ZOET WAS", cover: "/book1.png" },
@@ -33,7 +50,7 @@ export default function SectionBooks() {
   // 🔥 NORMAL GRID VIEW
   return (
     <div className="w-full">
-      <section className="w-full py-24 px-6 md:px-16 bg-gradient-to-b from-[#0f0d11]/95 via-[#4f4152]/80 to-[#75805d]/60 text-white">
+      <section ref={sectionRef} className="w-full py-24 px-6 md:px-16 bg-gradient-to-b from-[#0f0d11]/95 via-[#4f4152]/80 to-[#75805d]/60 text-white">
 
         <div className="max-w-6xl mx-auto text-center">
 
