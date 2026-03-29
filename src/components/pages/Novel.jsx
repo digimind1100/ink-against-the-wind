@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
-import { booksData, getExcerpt } from "../../data/books";
 import BookDetails from "./BookDetails";
 
 export default function NovelPage() {
