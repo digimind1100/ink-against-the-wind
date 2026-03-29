@@ -1,8 +1,10 @@
+const base = import.meta.env.BASE_URL;
+
 export const booksData = [
   {
     id: "book1",
     title: "DE SUiKER DiE NiET ZOET WAS",
-    cover: `${base}novel/book1.png`,
+    cover: `${import.meta.env.BASE_URL}novel/book1.png`,
     description: `De Sugar that wasn’t sweet
 A Journey Through the Black Water of the Soul
 
@@ -14,35 +16,35 @@ The transition to 1873 India is handled with remarkable sensitivity, stripping a
   {
     id: "book2",
     title: "CHINI JO MITHI NA THI",
-    cover: `${base}novel/book2.png`,
+    cover: `${import.meta.env.BASE_URL}novel/book2.png`,
     description: `This is another book full description. Replace with your real content later. It can be multiple paragraphs.`,
   },
 
   {
     id: "book3",
     title: "CHINI JO MITHI NA THI",
-    cover: `${base}novel/book3.png`,
+    cover: `${import.meta.env.BASE_URL}novel/book3.png`,
     description: `This is another book full description. Replace with your real content later. It can be multiple paragraphs.`,
   },
 
   {
     id: "book4",
     title: "CHINI JO MITHI NA THI",
-    cover: `${base}novel/book4.png`,
+    cover: `${import.meta.env.BASE_URL}novel/book4.png`,
     description: `This is another book full description. Replace with your real content later. It can be multiple paragraphs.`,
   },
 
   {
     id: "book5",
     title: "CHINI JO MITHI NA THI",
-    cover: `${base}novel/book5.png`,
+    ccover: `${import.meta.env.BASE_URL}novel/book5.png`,
     description: `This is another book full description. Replace with your real content later. It can be multiple paragraphs.`,
   },
 
   {
     id: "book6",
     title: "CHINI JO MITHI NA THI",
-    cover: `${base}novel/book6.png`,
+    cover: `${import.meta.env.BASE_URL}novel/book6.png`,
     description: `This is another book full description. Replace with your real content later. It can be multiple paragraphs.`,
   },
 
