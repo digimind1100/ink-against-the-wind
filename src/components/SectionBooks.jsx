@@ -20,7 +20,7 @@ export default function SectionBooks() {
   {
     title: "BINT-E-DAHIR",
     cover: "/book4.png",
-    link: "https://www.tiktok.com/@bintedahir1?_r=1&_t=ZT-92bL0lZTDnK",
+    link: "/book/book4",
   },
   {
     title: "GAWADAR KE KEKREY",
