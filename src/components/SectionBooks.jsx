@@ -4,12 +4,14 @@ import BookDetails from "./pages/BookDetails";
 import { useEffect } from "react";
 
 
-useEffect(() => {
-  window.scrollTo(0, 0);
-}, []);
 
 export default function SectionBooks() {
   const [selectedBook, setSelectedBook] = useState(null);
+
+  
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
 
   if (selectedBook) {
     return (
