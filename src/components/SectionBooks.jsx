@@ -1,9 +1,24 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import BookDetails from "./pages/BookDetails";
+import { useEffect } from "react";
+
+
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
 
 export default function SectionBooks() {
   const [selectedBook, setSelectedBook] = useState(null);
+
+  if (selectedBook) {
+    return (
+      <BookDetails
+        book={selectedBook}
+        onBack={() => setSelectedBook(null)}
+      />
+    );
+  }
 
   const books = [
     { title: "DE SUiKER DiE NiET ZOET WAS", cover: "/book1.png" },
