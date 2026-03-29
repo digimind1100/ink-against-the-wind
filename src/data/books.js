@@ -2,7 +2,7 @@ export const booksData = [
   {
     id: "book1",
     title: "DE SUiKER DiE NiET ZOET WAS",
-    cover: "/novel/book1.png",
+    cover: `${base}novel/book1.png`,
     description: `De Sugar that wasn’t sweet
 A Journey Through the Black Water of the Soul
 
@@ -14,35 +14,35 @@ The transition to 1873 India is handled with remarkable sensitivity, stripping a
   {
     id: "book2",
     title: "CHINI JO MITHI NA THI",
-    cover: "/novel/book2.png",
+    cover: `${base}novel/book2.png`,
     description: `This is another book full description. Replace with your real content later. It can be multiple paragraphs.`,
   },
 
   {
     id: "book3",
     title: "CHINI JO MITHI NA THI",
-    cover: "/novel/book3.png",
+    cover: `${base}novel/book3.png`,
     description: `This is another book full description. Replace with your real content later. It can be multiple paragraphs.`,
   },
 
   {
     id: "book4",
     title: "CHINI JO MITHI NA THI",
-    cover: "/novel/book4.png",
+    cover: `${base}novel/book4.png`,
     description: `This is another book full description. Replace with your real content later. It can be multiple paragraphs.`,
   },
 
   {
     id: "book5",
     title: "CHINI JO MITHI NA THI",
-    cover: "/novel/book5.png",
+    cover: `${base}novel/book5.png`,
     description: `This is another book full description. Replace with your real content later. It can be multiple paragraphs.`,
   },
 
   {
     id: "book6",
     title: "CHINI JO MITHI NA THI",
-    cover: "/novel/book6.png",
+    cover: `${base}novel/book6.png`,
     description: `This is another book full description. Replace with your real content later. It can be multiple paragraphs.`,
   },
 
