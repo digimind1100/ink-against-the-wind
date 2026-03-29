@@ -8,7 +8,7 @@ import SectionBooks from "../SectionBooks";
 import LiveBroadcasts from "../LiveBroadcasts";
 import AboutAuthor from "../AboutAuthor";
 import Footer from "../Footer";
-import Audio from "../Audio"
+import Audio from "./Audio"
 
 export default function Home() {
   return (
