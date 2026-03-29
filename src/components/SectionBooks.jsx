@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import BookDetails from "./BookDetails";
+import BookDetails from "./pages/BookDetails";
 
 export default function SectionBooks() {
   const [selectedBook, setSelectedBook] = useState(null);
