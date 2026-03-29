@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import { booksData, getExcerpt } from "../../data/books";
-import { booksData } from "../../data/books";
 
 const book = booksData.find((b) => b.id === id);
 
