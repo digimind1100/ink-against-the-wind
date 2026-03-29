@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import BookDetails from "./BookDetails";
+import { booksData, getExcerpt } from "../../data/books";
 
 export default function NovelPage() {
   const [selectedBook, setSelectedBook] = useState(null);
