@@ -50,7 +50,7 @@ export default function SectionBooks() {
   // 🔥 NORMAL GRID VIEW
   return (
     <div className="w-full">
-      <section ref={sectionRef} className="w-full py-24 px-6 md:px-16 bg-gradient-to-b from-[#0f0d11]/95 via-[#4f4152]/80 to-[#75805d]/60 text-white pt-24 min-h-screen">
+      <section ref={sectionRef} className="w-full py-24 px-6 md:px-16 bg-gradient-to-b from-[#0f0d11]/95 via-[#4f4152]/80 to-[#75805d]/60 text-white">
 
         <div className="max-w-6xl mx-auto text-center">
 

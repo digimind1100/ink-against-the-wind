@@ -11,7 +11,7 @@ export default function BookDetails({ book, onBack }) {
         {/* 🔙 Back */}
         <button
           onClick={onBack}
-          className="mb-8 text-sm border border-white/40 px-4 py-2 rounded-full hover:bg-white/20 transition"
+          className="text-sm border border-white/40 px-4 py-2 rounded-full hover:bg-white/20 transition"
         >
           ← Back
         </button>
