@@ -20,3 +20,11 @@ The transition to 1873 India is handled with remarkable sensitivity, stripping a
 
   // add others same way...
 ];
+
+export const getExcerpt = (text, length = 120) => {
+  if (!text) return "";
+
+  return text.length > length
+    ? text.substring(0, text.lastIndexOf(" ", length)) + "..."
+    : text;
+};
