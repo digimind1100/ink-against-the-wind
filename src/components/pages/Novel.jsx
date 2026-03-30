@@ -39,7 +39,7 @@ export default function NovelPage() {
             <div className="p-6 flex flex-col justify-between">
 
               {/* Title */}
-              <h2 className="text-2xl font-semibold mb-2">
+              <h2 className="text-2xl font-semibold mb-2 text-black">
                 {book.title}
               </h2>
 
