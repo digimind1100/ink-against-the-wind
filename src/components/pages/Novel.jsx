@@ -38,9 +38,23 @@ export default function NovelPage() {
                 {book.title}
               </h2>
 
-              <p className="text-gray-600 mb-4">
-                {getExcerpt(book.description, 150)}
-              </p>
+              {(() => {
+                const lines = book.description.split("\n");
+
+                return (
+                  <>
+                    {/* Heading */}
+                    <h3 className="text-lg font-semibold mb-1">
+                      {lines[0]}
+                    </h3>
+
+                    {/* Description */}
+                    <p className="text-gray-600 mb-4">
+                      {getExcerpt(lines.slice(1).join(" "), 120)}
+                    </p>
+                  </>
+                );
+              })()}
 
               {/* ✅ LINK FIXED */}
               <Link
