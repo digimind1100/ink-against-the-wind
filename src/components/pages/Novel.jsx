@@ -45,7 +45,7 @@ export default function NovelPage() {
 
 
               {/* Heading */}
-              <h3 className="text-lg font-semibold mb-1 text-black border border-red-500">
+              <h3 className="text-lg font-semibold mb-1 text-black border">
                 {book.heading || "No Heading"}
               </h3>
 
