@@ -41,12 +41,7 @@ export default function SectionBooks() {
                 <h3 className="mt-4 text-xl">{book.title}</h3>
 
                 {/* ✅ YAHAN LINK LAGANA HAI */}
-                <Link
-                  to={`/book${index + 1}`}
-                  className="mt-3 px-6 py-2 border border-white/40 rounded-full hover:bg-white/20 transition inline-block"
-                >
-                  Read More
-                </Link>
+                
               </motion.div>
             ))}
           </div>

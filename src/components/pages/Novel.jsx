@@ -26,13 +26,11 @@ export default function NovelPage() {
             className="flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden"
           >
             {/* Image */}
-            <div className="w-full md:w-1/3 h-64 overflow-hidden">
-              <img
-                src={book.cover}
-                alt={book.title}
-                className="w-full h-full object-cover"
-              />
-            </div>
+            <img
+              src={book.cover}
+              alt={book.title}
+              className="w-full md:w-1/3 object-cover"
+            />
 
             {/* Content */}
             <div className="p-6 flex flex-col justify-between">
