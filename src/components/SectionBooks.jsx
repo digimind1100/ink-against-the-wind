@@ -1,25 +1,8 @@
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
-import BookDetails from "./pages/BookDetails";
-import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 export default function SectionBooks() {
-  const [selectedBook, setSelectedBook] = useState(null);
-   const sectionRef = useRef(null);
-
-
-const handleReadMore = (book) => {
-  setSelectedBook(book);
-
-  setTimeout(() => {
-    sectionRef.current?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  }, 50);
-};
-
-
+  
   const books = [
     { title: "DE SUiKER DiE NiET ZOET WAS", cover: "/book1.png" },
     { title: "CHINI JO MITHI NA THI", cover: "/book2.png" },
@@ -28,18 +11,6 @@ const handleReadMore = (book) => {
     { title: "GAWADAR KE KEKREY", cover: "/book5.png" },
     { title: "ZARD QAIDI", cover: "/book6.png" },
   ];
-
-  // 🔥 FULL SCREEN REPLACEMENT
-  if (selectedBook) {
-    return (
-      <div className="w-full min-h-screen bg-black">
-        <BookDetails
-          book={selectedBook}
-          onBack={() => setSelectedBook(null)}
-        />
-      </div>
-    );
-  }
 
   // 🔥 NORMAL GRID VIEW
   return (
@@ -69,16 +40,16 @@ const handleReadMore = (book) => {
 
                 <h3 className="mt-4 text-xl">{book.title}</h3>
 
-                <button
-                  onClick={() => setSelectedBook(book)}
-                  className="mt-3 px-6 py-2 border border-white/40 rounded-full hover:bg-white/20 transition"
+                {/* ✅ YAHAN LINK LAGANA HAI */}
+                <Link
+                  to={`/book${index + 1}`}
+                  className="mt-3 px-6 py-2 border border-white/40 rounded-full hover:bg-white/20 transition inline-block"
                 >
                   Read More
-                </button>
+                </Link>
               </motion.div>
             ))}
           </div>
-
         </div>
       </section>
     </div>

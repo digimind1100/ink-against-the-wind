@@ -1,8 +1,6 @@
-import React, { useState } from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
-import BookDetails from "./BookDetails";
-import { booksData, getExcerpt } from "../../data/books";
+import { Link } from "react-router-dom";
 
 export default function NovelPage() {
   const [selectedBook, setSelectedBook] = useState(null);
@@ -52,14 +50,7 @@ export default function NovelPage() {
                   </p>
 
                   {/* 🔥 CLICK HANDLER */}
-                  <button
-                    onClick={() => {
-                      setSelectedBook(book);
-                      window.scrollTo(0, 0);
-                    }}
-                  >
-                    Read More
-                  </button>
+                  <Link to={`/book${index + 1}`}>Read More</Link>
                 </div>
               </div>
             ))}
