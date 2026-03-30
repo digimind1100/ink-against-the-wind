@@ -5,9 +5,7 @@ import { Link } from "react-router-dom";
 export default function Book1() {
   const book = {
     heading: "De Sugar that wasn’t sweet",
-    description: `A Journey Through the Black Water of the Soul
-
-In this hauntingly beautiful narrative, the author weaves a tapestry...`
+    description: `A Journey Through the Black Water of the Soul In this hauntingly beautiful narrative, the author weaves a tapestry...`
   };
 
   return (
