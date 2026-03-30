@@ -35,7 +35,7 @@ export default function SectionBooks() {
               >
                 <img
                   src={book.cover}
-                  className="w-64 h-96 object-cover rounded-xl hover:opacity-80"
+                  className="w-64 h-96 object-cover rounded-xl hover:border-2 hover:border-gray-300"
                 />
 
                 <h3 className="mt-4 text-xl">{book.title}</h3>
