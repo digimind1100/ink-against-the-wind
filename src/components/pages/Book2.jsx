@@ -2,7 +2,7 @@ import Navbar from "../Navbar";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
 
-export default function Book1() {
+export default function Book2() {
   const book = {
     heading: "Chini Jo Meethi na thi",
     description: `The Bitter and the Sweet
