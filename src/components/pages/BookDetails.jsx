@@ -3,6 +3,17 @@ import { motion } from "framer-motion";
 export default function BookDetails({ book, onBack }) {
   if (!book) return null;
 
+  const handleReadMore = (book) => {
+  setSelectedBook(book);
+
+  setTimeout(() => {
+    sectionRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }, 50);
+};
+
   return (
     <section className="min-h-screen bg-gradient-to-b from-[#0f0d11] via-[#4f4152] to-[#75805d] text-white px-6 md:px-16 py-16">
       

@@ -7,23 +7,17 @@ export default function SectionBooks() {
   const [selectedBook, setSelectedBook] = useState(null);
    const sectionRef = useRef(null);
 
-  useEffect(() => {
+
+const handleReadMore = (book) => {
+  setSelectedBook(book);
+
+  setTimeout(() => {
     sectionRef.current?.scrollIntoView({
-  behavior: "smooth",
-  block: "start",
-});
-  }, [selectedBook]);
-
-  const handleBack = () => {
-    setSelectedBook(null);
-
-    setTimeout(() => {
-      sectionRef.current?.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }, 50);
-  };
+      behavior: "smooth",
+      block: "start",
+    });
+  }, 50);
+};
 
 
   const books = [
