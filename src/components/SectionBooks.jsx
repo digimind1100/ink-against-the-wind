@@ -34,10 +34,9 @@ export default function SectionBooks() {
                 className="flex flex-col items-center"
               >
                 <img
-  src={book.cover}
-  alt={book.title}
-  className="w-full md:w-1/3 object-cover hover:opacity-80"
-/>
+                  src={book.cover}
+                  className="w-64 h-96 object-cover rounded-xl hover:opacity-80"
+                />
 
                 <h3 className="mt-4 text-xl">{book.title}</h3>
 
