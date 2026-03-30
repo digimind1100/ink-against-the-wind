@@ -18,9 +18,14 @@ export default function Book1() {
         </Link>
 
         {/* Title */}
-        <h1 className="text-3xl md:text-5xl font-bold mb-6">
-          DE SUiKER DiE NiET ZOET WAS
-        </h1>
+
+        <h2 className="text-2xl md:text-3xl font-semibold mb-4">
+          {book.heading}
+        </h2>
+
+        <p className="text-lg leading-relaxed whitespace-pre-line">
+          {book.description}
+        </p>
 
         {/* Image */}
         <img
@@ -30,7 +35,7 @@ export default function Book1() {
 
         {/* Description */}
         <p className="text-lg leading-relaxed whitespace-pre-line">
-          De Sugar that wasn’t sweet  
+          De Sugar that wasn’t sweet
           A Journey Through the Black Water of the Soul...
 
           (yahan apna full content daalna)

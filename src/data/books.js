@@ -2,16 +2,16 @@ const base = import.meta.env.BASE_URL;
 
 export const booksData = [
   {
-    id: "book1",
-    title: "DE SUiKER DiE NiET ZOET WAS",
-    cover: `${import.meta.env.BASE_URL}novel/book1.png`,
-    description: `De Sugar that wasn’t sweet
-A Journey Through the Black Water of the Soul
+  id: "book1",
+  title: "DE SUiKER DiE NIET ZOET WAS",
+  cover: `${import.meta.env.BASE_URL}novel/book1.png`,
+  
+  heading: "De Sugar that wasn’t sweet",
+  
+  description: `A Journey Through the Black Water of the Soul
 
-In this hauntingly beautiful narrative, the author weaves a tapestry that is as much about the geography of the heart as it is about the migration of a people. What begins as a modern, domestic tragedy in The Hague—a quiet, suffocating battle with depression—blossoms into a sweeping historical epic.
-
-The transition to 1873 India is handled with remarkable sensitivity, stripping away the romanticism of the past to reveal the raw, systemic cruelty of British rule.`,
-  },
+In this hauntingly beautiful narrative, the author weaves a tapestry...`
+},
 
   {
     id: "book2",
