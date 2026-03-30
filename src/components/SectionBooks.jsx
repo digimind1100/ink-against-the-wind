@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 export default function SectionBooks() {
-  
+
   const books = [
     { title: "DE SUiKER DiE NiET ZOET WAS", cover: "/book1.png" },
     { title: "CHINI JO MITHI NA THI", cover: "/book2.png" },
@@ -33,15 +33,18 @@ export default function SectionBooks() {
                 key={index}
                 className="flex flex-col items-center"
               >
-                <img
-                  src={book.cover}
-                  className="w-64 h-96 object-cover rounded-xl hover:border-2 hover:border-gray-300"
-                />
+                <div className="w-full md:w-[250px] flex-shrink-0">
+                  <img
+                    src={book.cover}
+                    alt={book.title}
+                    className="w-full h-full object-cover rounded-xl hover:border-2 hover:border-gray-300"
+                  />
+                </div>
 
                 <h3 className="mt-4 text-xl">{book.title}</h3>
 
                 {/* ✅ YAHAN LINK LAGANA HAI */}
-                
+
               </motion.div>
             ))}
           </div>
@@ -50,3 +53,4 @@ export default function SectionBooks() {
     </div>
   );
 }
+
