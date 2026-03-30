@@ -33,7 +33,7 @@ export default function SectionBooks() {
                 key={index}
                 className="flex flex-col items-center"
               >
-                
+                <div className="w-full md:w-1/3 h-64 overflow-hidden group relative">
                   <img
                     src={book.cover}
                     alt={book.title}
@@ -42,7 +42,7 @@ export default function SectionBooks() {
 
                   {/* Overlay */}
                   <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition duration-500"></div>
-                
+                </div>
 
                 <h3 className="mt-4 text-xl">{book.title}</h3>
 
