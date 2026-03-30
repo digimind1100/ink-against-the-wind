@@ -34,29 +34,27 @@ export default function NovelPage() {
 
             {/* Content */}
             <div className="p-6 flex flex-col justify-between">
+
+              {/* Title */}
               <h2 className="text-2xl font-semibold mb-2">
                 {book.title}
               </h2>
 
-              {(() => {
-                const lines = book.description.split("\n");
+              {/* ✅ Heading + Description (CLEAN LOGIC) */}
+              <h3 className="text-lg font-semibold mb-1">
+                {book.heading || book.description.split("\n")[0]}
+              </h3>
 
-                return (
-                  <>
-                    {/* Heading */}
-                    <h3 className="text-lg font-semibold mb-1">
-                      {lines[0]}
-                    </h3>
+              <p className="text-gray-600 mb-4">
+                {getExcerpt(
+                  book.description.includes("\n")
+                    ? book.description.split("\n").slice(1).join(" ")
+                    : book.description,
+                  120
+                )}
+              </p>
 
-                    {/* Description */}
-                    <p className="text-gray-600 mb-4">
-                      {getExcerpt(lines.slice(1).join(" "), 120)}
-                    </p>
-                  </>
-                );
-              })()}
-
-              {/* ✅ LINK FIXED */}
+              {/* Read More */}
               <Link
                 to={`/book${index + 1}`}
                 className="self-start px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
