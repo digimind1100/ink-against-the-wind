@@ -37,7 +37,7 @@ The transition to 1873 India is handled with remarkable sensitivity, stripping a
   {
     id: "book5",
     title: "CHINI JO MITHI NA THI",
-    ccover: `${import.meta.env.BASE_URL}novel/book5.png`,
+    cover: `${import.meta.env.BASE_URL}novel/book5.png`,
     description: `This is another book full description. Replace with your real content later. It can be multiple paragraphs.`,
   },
 
