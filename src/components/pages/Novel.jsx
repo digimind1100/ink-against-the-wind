@@ -3,6 +3,9 @@ import Footer from "../Footer";
 import { Link } from "react-router-dom";
 import { booksData, getExcerpt } from "../../data/books";
 
+
+console.log(booksData);
+
 export default function NovelPage() {
   return (
     <div className="min-h-screen bg-gray-500">
@@ -40,18 +43,15 @@ export default function NovelPage() {
                 {book.title}
               </h2>
 
-              {/* ✅ Heading + Description (CLEAN LOGIC) */}
+
+              {/* Heading */}
               <h3 className="text-lg font-semibold mb-1">
-                {book.heading || book.description.split("\n")[0]}
+                {book.heading}
               </h3>
 
+              {/* Description */}
               <p className="text-gray-600 mb-4">
-                {getExcerpt(
-                  book.description.includes("\n")
-                    ? book.description.split("\n").slice(1).join(" ")
-                    : book.description,
-                  120
-                )}
+                {getExcerpt(book.description, 120)}
               </p>
 
               {/* Read More */}
