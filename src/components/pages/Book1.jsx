@@ -3,6 +3,13 @@ import Footer from "../Footer";
 import { Link } from "react-router-dom";
 
 export default function Book1() {
+  const book = {
+    heading: "De Sugar that wasn’t sweet",
+    description: `A Journey Through the Black Water of the Soul
+
+In this hauntingly beautiful narrative, the author weaves a tapestry...`
+  };
+
   return (
     <div className="min-h-screen bg-black text-white">
       <Navbar />
@@ -18,14 +25,9 @@ export default function Book1() {
         </Link>
 
         {/* Title */}
-
         <h2 className="text-2xl md:text-3xl font-semibold mb-4">
           {book.heading}
         </h2>
-
-        <p className="text-lg leading-relaxed whitespace-pre-line">
-          {book.description}
-        </p>
 
         {/* Image */}
         <img
@@ -35,10 +37,7 @@ export default function Book1() {
 
         {/* Description */}
         <p className="text-lg leading-relaxed whitespace-pre-line">
-          De Sugar that wasn’t sweet
-          A Journey Through the Black Water of the Soul...
-
-          (yahan apna full content daalna)
+          {book.description}
         </p>
 
       </div>
