@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 export default function Book1() {
   const book = {
     heading: "De Sugar that wasn’t sweet",
-    description: `A Journey Through the Black Water of the Soul In this hauntingly beautiful narrative, the author weaves a tapestry...`
+    description: `In this hauntingly beautiful narrative, the author weaves a tapestry that is as much about the geography of the heart as it is about the migration of a people. What begins as a modern, domestic tragedy in The Hague—a quiet, suffocating battle with depression—blossoms into a sweeping historical epic.
+The transition to 1873 India is handled with remarkable sensitivity, stripping away the romanticism of the past to reveal the raw, systemic cruelty of British rule. By tracing the protagonist's lineage across the Kala Pani to the soil of Suriname, the story suggests that our current shadows are often cast by the suns of our ancestors. It is a profound meditation on how understanding where we came from is the only way to decide where we are going.
+`
   };
 
   return (
