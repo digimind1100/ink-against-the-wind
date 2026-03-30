@@ -18,11 +18,13 @@ import Book3 from "./components/pages/Book3";
 import Book4 from "./components/pages/Book4";
 import Book5 from "./components/pages/Book5";
 import Book6 from "./components/pages/Book6";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
 
         {/* Layout Wrapper */}
