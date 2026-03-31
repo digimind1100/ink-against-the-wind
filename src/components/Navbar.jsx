@@ -16,12 +16,10 @@ export default function Navbar() {
     { name: "Translated Work", path: "/translated-work" },
     { name: "Reviews", path: "/reviews" },
     { name: "Events", path: "/events" },
-    { name: "Gallery", path: "/gallery" },
   ];
 
   const miniMenu = [
     { name: "Blog", path: "/blog" },   // ✅ fixed
-    { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
   ];
 
