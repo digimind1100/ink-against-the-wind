@@ -39,7 +39,7 @@ I am told that the story is going to be made into a animation film, but I don’
 
         {/* Image */}
         <img
-          src="/novel/book1.png"
+          src="/novel/book5.png"
           className="w-72 mb-6 rounded-xl"
         />
 

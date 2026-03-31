@@ -3,7 +3,7 @@ const base = import.meta.env.BASE_URL;
 export const booksData = [
 {
   id: "book1",
-  title: "De Sugar that wasn’t sweet",
+  title: "The Sugar that wasn’t sweet",
   cover: `${import.meta.env.BASE_URL}novel/book1.png`,
   heading: "A Journey Through the Black Water of the Soul",
   description: `In this hauntingly beautiful narrative, the author weaves a tapestry that is as much about the geography of the heart as it is about the migration of a people. What begins as a modern, domestic tragedy in The Hague—a quiet, suffocating battle with depression—blossoms into a sweeping historical epic.
@@ -13,7 +13,7 @@ The transition to 1873 India is handled with remarkable sensitivity, stripping a
 
 {
   id: "book2",
-  title: "Chini Jo Meethi na thi ( De Sugar that wasn’t sweet )",
+  title: "Chini Jo Meethi na thi ( The Sugar that wasn’t sweet )",
   cover: `${import.meta.env.BASE_URL}novel/book2.png`,
   heading: "The Bitter and the Sweet",
   description: `In the coastal mists of The Hague, a young couple finds their bond frayed by the shadow of the man’s deepening melancholy. Teetering on the precipice of ruin, the relationship falters as he casts about for a fleeting reprieve—a hollow happiness that vanishes as quickly as it appears. Yet, by a sudden caprice of fate, he encounters a stranger who holds the lantern to his forgotten history, guiding him back through the corridors of time.

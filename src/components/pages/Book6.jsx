@@ -40,7 +40,7 @@ Ghulam Asghar Khan
 
         {/* Image */}
         <img
-          src="/novel/book1.png"
+          src="/novel/book6.png"
           className="w-72 mb-6 rounded-xl"
         />
 

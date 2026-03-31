@@ -37,7 +37,7 @@ Both ardently believe that the world is unjust and unfair and as true believers 
 
         {/* Image */}
         <img
-          src="/novel/book1.png"
+          src="/novel/book3.png"
           className="w-72 mb-6 rounded-xl"
         />
 

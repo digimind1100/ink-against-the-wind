@@ -36,7 +36,7 @@ The journey concludes where it began: with a man no longer adrift. Having uneart
 
         {/* Image */}
         <img
-          src="/novel/book1.png"
+          src="/novel/book2.png"
           className="w-72 mb-6 rounded-xl"
         />
 

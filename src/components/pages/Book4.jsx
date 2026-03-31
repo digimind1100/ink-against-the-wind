@@ -38,7 +38,7 @@ Inevitably, bin Qasim is drawn towards Rajkumari, which she senses forthwith. No
 
         {/* Image */}
         <img
-          src="/novel/book1.png"
+          src="/novel/book4.png"
           className="w-72 mb-6 rounded-xl"
         />
 
