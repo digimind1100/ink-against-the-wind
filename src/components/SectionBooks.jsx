@@ -33,13 +33,13 @@ export default function SectionBooks() {
                 key={index}
                 className="flex flex-col items-center"
               >
-                <div className="w-full md:w-[250px] flex-shrink-0">
+               
                   <img
                     src={book.cover}
                     alt={book.title}
                     className="w-full md:w-1/3 object-cover hover:border-2 hover:border-gray-300"
                   />
-                </div>
+             
 
                 <h3 className="mt-4 text-xl">{book.title}</h3>
 
