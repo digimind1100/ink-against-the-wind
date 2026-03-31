@@ -111,7 +111,7 @@ export default function TranslatedWork() {
                 <td className="p-3">Pashto, Persian, English (In Progress)</td>
               </tr>
               <tr className="border-t border-white/10">
-                <td className="p-3">Binte Dahir</td>
+                <td className="p-3">Bint-E-Dahir</td>
                 <td className="p-3">
                   Pashto, Punjabi, Gurmukhi, Sindhi, Persian, English
                 </td>

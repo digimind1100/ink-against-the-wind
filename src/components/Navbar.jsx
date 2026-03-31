@@ -14,8 +14,8 @@ export default function Navbar() {
     { name: "Home", path: "/" },
     { name: "Novels", path: "/novel" },
     { name: "Translated Work", path: "/translated-work" },
+    { name: "Reviews", path: "/reviews" },
     { name: "Events", path: "/events" },
-    { name: "Travel", path: "/travel" },
     { name: "Gallery", path: "/gallery" },
   ];
 

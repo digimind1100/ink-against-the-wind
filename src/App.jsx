@@ -36,8 +36,8 @@ function App() {
           {/* OTHER PAGES */}
           <Route path="/blog" element={<Blog />} />
           <Route path="/novel" element={<Novel />} />
+          <Route path="/reviews" element={<Reviews />} />
           <Route path="/events" element={<Events />} />
-          <Route path="/travel" element={<Travel />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/gallery" element={<Gallery />} />
