@@ -39,11 +39,11 @@ export default function Footer() {
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.7, delay: 0.25 }}
   className="
-    flex flex-col sm:flex-row
-    justify-center items-center
-    gap-4 sm:gap-8
-    mt-6
-  "
+  flex flex-wrap
+  justify-center items-center
+  gap-6
+  mt-6
+"
 >
   <a href="#" className="flex items-center gap-2">
     <FaInstagram className="text-xl text-[#E4405F]" /> Instagram
@@ -65,7 +65,7 @@ export default function Footer() {
   <a href="https://www.tiktok.com/@bintedahir1?_r=1&_t=ZT-92bL0lZTDnK">
     <FaTiktok className="text-xl text-[#69C9D0]" /> TikTok
   </a>
-</motion.div>
+</motion.div >
 
 
         {/* Divider */}
