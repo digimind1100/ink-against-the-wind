@@ -13,8 +13,8 @@ export default function Navbar() {
   const mainMenu = [
     { name: "Home", path: "/" },
     { name: "Novels", path: "/novel" },
-    { name: "Events", path: "/events" },
     { name: "Translated Work", path: "/translated-work" },
+    { name: "Events", path: "/events" },
     { name: "Travel", path: "/travel" },
     { name: "Gallery", path: "/gallery" },
   ];
