@@ -23,12 +23,12 @@ const Audio = () => {
         <div className="max-w-4xl mx-auto">
           <div className="aspect-video rounded-2xl overflow-hidden border border-gray-800 shadow-lg">
             <iframe
-              src="https://www.youtube.com/watch?v=IqojrM6QsjE"
-              title="YouTube Audio Channel"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="w-full h-full"
-            />
+  src="https://www.youtube.com/embed/IqojrM6QsjE"
+  title="YouTube Audio"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+  className="w-full h-full"
+/>
           </div>
         </div>
 
