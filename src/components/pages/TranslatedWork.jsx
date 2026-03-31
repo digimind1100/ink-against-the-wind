@@ -38,7 +38,7 @@ export default function TranslatedWork() {
               desc: "Widely acclaimed; currently being translated into English.",
             },
             {
-              title: "Binte Dahir",
+              title: "Bint-E-Dahir",
               detail: "Aks Publishers, Lahore (2022)",
               desc: "Translated across five regional languages and English.",
             },
