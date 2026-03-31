@@ -49,15 +49,20 @@ export default function Footer() {
     <FaInstagram className="text-xl text-[#E4405F]" /> Instagram
   </a>
 
-  <a href="#" className="flex items-center gap-2">
-    <FaFacebook className="text-xl text-[#1877F2]" /> Facebook
-  </a>
+  <a
+  href="https://www.facebook.com/share/v/1CtzvUdG8j/?mibextid=wwXIfr"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-2 hover:opacity-80 transition"
+>
+  <FaFacebook className="text-xl text-[#1877F2]" /> Facebook
+</a>
 
-  <a href="#" className="flex items-center gap-2">
+  <a href="https://www.youtube.com/embed/IqojrM6QsjE">
     <FaYoutube className="text-xl text-[#FF0000]" /> YouTube
   </a>
 
-  <a href="#" className="flex items-center gap-2">
+  <a href="https://www.tiktok.com/@bintedahir1?_r=1&_t=ZT-92bL0lZTDnK">
     <FaTiktok className="text-xl text-[#69C9D0]" /> TikTok
   </a>
 </motion.div>
