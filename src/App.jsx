@@ -7,7 +7,6 @@ import Home from "./components/pages/Home";
 import Novel from "./components/pages/Novel";
 import Blog from "./components/pages/Blog";
 import Events from "./components/pages/Events";
-import Travel from "./components/pages/Travel";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 import Gallery from "./components/pages/Gallery";
@@ -18,7 +17,7 @@ import Book3 from "./components/pages/Book3";
 import Book4 from "./components/pages/Book4";
 import Book5 from "./components/pages/Book5";
 import Book6 from "./components/pages/Book6";
-import Book6 from "./components/pages/Reviews";
+import Reviews from "./components/pages/Reviews";
 import ScrollToTop from "./components/ScrollToTop";
 
 
