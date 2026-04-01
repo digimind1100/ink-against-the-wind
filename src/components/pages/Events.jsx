@@ -15,8 +15,34 @@ export default function Events() {
       id: 2,
       title: "Another Video",
       type: "youtube",
-      youtube: "https://www.youtube.com/watch?v=abcd1234",
+      youtube: "https://youtu.be/TuAl-_VrIVc?is=f_Bkd6TliZTcrxRu",
     },
+ {
+      id: 3,
+      title: "Another Video",
+      type: "youtube",
+      youtube: "https://youtu.be/dQY5ZPfYdoI?is=v7w_FTba7MIp1DAi",
+    },
+{
+      id: 4,
+      title: "Another Video",
+      type: "youtube",
+      youtube: "https://youtu.be/hvoIt0y7vVs?is=uqFN45dDPbygW29s",
+    },
+{
+      id: 5,
+      title: "Another Video",
+      type: "youtube",
+      youtube: "https://youtu.be/YM8Jm0FQaT4?is=KCYvg2KdoNLZBX3_",
+    },
+    {
+      id: 6,
+      title: "Another Video",
+      type: "youtube",
+      youtube: "https://youtu.be/RYZ4Sb4A02Y?is=DR4cDzSDzdoDBNvL",
+    },
+
+
   ]);
 
   const [activeVideo, setActiveVideo] = useState(null);
