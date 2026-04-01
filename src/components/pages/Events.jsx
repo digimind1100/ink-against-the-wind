@@ -11,7 +11,7 @@ export default function Events() {
   type: "youtube",
   thumbnail: "https://img.youtube.com/vi/C5XyXG8lLYU/0.jpg",
   url: "https://www.youtube.com/embed/C5XyXG8lLYU",
-}
+},
     {
       id: 2,
       title: "Short Film Clip",
