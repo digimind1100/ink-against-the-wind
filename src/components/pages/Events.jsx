@@ -42,7 +42,13 @@ export default function Events() {
       youtube: "https://youtu.be/RYZ4Sb4A02Y?is=DR4cDzSDzdoDBNvL",
     },
 
-
+{
+  id: 7,
+  title: "Facebook Event",
+  type: "facebook",
+  thumbnail: "/images/facebook-thumb.jpg", // you add manually
+  url: "https://www.facebook.com/share/v/14aLWBTrkMU/?mibextid=wwXIfr",
+}
   ]);
 
   const [activeVideo, setActiveVideo] = useState(null);
@@ -92,7 +98,13 @@ export default function Events() {
             return (
               <div
                 key={video.id}
-                onClick={() => setActiveVideo(finalVideo)}
+                onClick={() => {
+  if (video.type === "facebook") {
+    window.open(video.url, "_blank");
+  } else {
+    setActiveVideo(finalVideo);
+  }
+}}
                 className="group relative cursor-pointer overflow-hidden rounded-2xl"
               >
                 <img
