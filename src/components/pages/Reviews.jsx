@@ -3,16 +3,16 @@ import Footer from "../Footer";
 
 export default function Review() {
   const reviews = [
-    {
-      id: 1,
-      title: "A Deep Dive into the Story",
-      reviewer: "Literary Voice",
-      platform: "YouTube",
-      link: "https://youtube.com/",
-      thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg",
-      excerpt:
-        "A powerful narrative that captures emotion and depth beautifully.",
-    },
+    // {
+    //   id: 1,
+    //   title: "A Deep Dive into the Story",
+    //   reviewer: "Literary Voice",
+    //   platform: "YouTube",
+    //   link: "https://youtube.com/",
+    //   thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg",
+    //   excerpt:
+    //     "A powerful narrative that captures emotion and depth beautifully.",
+    // },
     {
       id: 2,
       title: "An Inspiring Literary Work",
@@ -24,16 +24,16 @@ export default function Review() {
         "A refreshing and unique voice that stands out in modern storytelling.",
     },
 
-    {
-      id: 3,
-      title: "Audience Reaction & Review",
-      reviewer: "Readers Community",
-      platform: "Facebook",
-      link: "https://facebook.com",
-      thumbnail: "/images/facebook.jpg",
-      excerpt:
-        "Readers are deeply moved and connected with the message of the book.",
-    },
+    // {
+    //   id: 3,
+    //   title: "Audience Reaction & Review",
+    //   reviewer: "Readers Community",
+    //   platform: "Facebook",
+    //   link: "https://facebook.com",
+    //   thumbnail: "/images/facebook.jpg",
+    //   excerpt:
+    //     "Readers are deeply moved and connected with the message of the book.",
+    // },
 
      {
       id: 4,
