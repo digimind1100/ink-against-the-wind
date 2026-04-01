@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { FaPenNib } from "react-icons/fa";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,9 +31,24 @@ export default function Navbar() {
       <div className="flex justify-between items-center px-6 py-3 relative">
 
         {/* Logo */}
-        <div className="text-2xl font-bold tracking-wide z-50">
-          Logo
-        </div>
+        <Link to="/" className="flex items-center gap-2">
+  
+  {/* Icon */}
+  <div className="bg-white/10 p-2 rounded-md">
+    <FaPenNib className="text-yellow-400 text-lg" />
+  </div>
+
+  {/* Text */}
+  <div className="flex flex-col leading-tight">
+    <span className="text-lg md:text-xl font-semibold tracking-wide text-white">
+      Ink Against
+    </span>
+    <span className="text-xs md:text-sm text-gray-300">
+      The Wind
+    </span>
+  </div>
+
+</Link>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-8 text-lg font-medium z-50 whitespace-nowrap">
