@@ -31,23 +31,17 @@ export default function Navbar() {
       <div className="flex justify-between items-center px-6 py-3 relative">
 
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2">
-  
+        <Link
+  to="/"
+  className="flex items-center gap-2 bg-white/10 px-3 py-2 rounded-lg hover:scale-105 transition"
+>
   {/* Icon */}
-  <div className="bg-white/10 p-2 rounded-md">
-    <FaPenNib className="text-yellow-400 text-lg" />
-  </div>
+  <FaPenNib className="text-yellow-400 text-lg" />
 
   {/* Text */}
-  <div className="flex flex-col leading-tight">
-    <span className="text-lg md:text-xl font-semibold tracking-wide text-white">
-      Ink Against
-    </span>
-    <span className="text-xs md:text-sm text-gray-300">
-      The Wind
-    </span>
-  </div>
-
+  <span className="text-sm md:text-base font-semibold tracking-wide text-white">
+    Ink Against The Wind
+  </span>
 </Link>
 
         {/* Desktop Menu */}
