@@ -9,7 +9,7 @@ export default function Events() {
       id: 1,
       title: "Writing Session",
       type: "youtube",
-      thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg",
+      thumbnail: "https://youtu.be/C5XyXG8lLYU?is=7h21CnAQfszt-JwQ",
       url: "https://youtu.be/C5XyXG8lLYU?is=7h21CnAQfszt-JwQ",
     },
     {
