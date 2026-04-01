@@ -9,7 +9,6 @@ import Blog from "./components/pages/Blog";
 import Events from "./components/pages/Events";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
-import Gallery from "./components/pages/Gallery";
 import TranslatedWork from "./components/pages/TranslatedWork";
 import Book1 from "./components/pages/Book1";
 import Book2 from "./components/pages/Book2";
