@@ -48,7 +48,31 @@ export default function Events() {
   type: "facebook",
   thumbnail: "/images/facebook-thumb.jpg", // you add manually
   url: "https://www.facebook.com/share/v/14aLWBTrkMU/?mibextid=wwXIfr",
-}
+},
+
+{
+  id: 8,
+  title: "Facebook Event",
+  type: "facebook",
+  thumbnail: "/images/facebook-thumb.jpg", // you add manually
+  url: "https://www.facebook.com/share/v/18F2q4n9jg/?mibextid=wwXIfr",
+},
+
+{
+  id: 9,
+  title: "Facebook Event",
+  type: "facebook",
+  thumbnail: "/images/facebook-thumb.jpg", // you add manually
+  url: "https://www.facebook.com/share/p/1Ai2Bhtr2n/?mibextid=wwXIfr",
+},
+{
+  id: 10,
+  title: "Facebook Event",
+  type: "facebook",
+  thumbnail: "/images/facebook-thumb.jpg", // you add manually
+  url: "https://youtu.be/hvoIt0y7vVs?is=uqFN45dDPbygW29s",
+},
+
   ]);
 
   const [activeVideo, setActiveVideo] = useState(null);
