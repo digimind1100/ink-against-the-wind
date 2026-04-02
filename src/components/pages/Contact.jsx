@@ -41,7 +41,7 @@ export default function Contact() {
       </div>
 
       {/* 📩 Form */}
-      <div className="flex justify-center px-6 pb-20 pt-24">
+      <div className="flex justify-center px-6 pb-20">
         <form
           ref={form}
           onSubmit={sendEmail}
