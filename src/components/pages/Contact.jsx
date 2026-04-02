@@ -33,7 +33,7 @@ export default function Contact() {
       <Navbar />
 
       {/* 🔥 Header */}
-      <div className="text-center py-20 px-6">
+      <div className="text-center px-6">
         <h1 className="text-5xl font-bold">Contact Me</h1>
         <p className="text-gray-400 mt-4">
           Let’s connect. Share your thoughts, feedback, or inquiries.
